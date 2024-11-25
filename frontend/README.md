@@ -1,80 +1,95 @@
-![reactjs-vite-tailwindcss-boilerplate](https://user-images.githubusercontent.com/16243531/217138979-b854309c-4742-4275-a705-f9fec5158217.jpg)
+# Rabobank Assessment Frontend
 
-# React Tailwindcss Boilerplate build with Vite
+A React application built with TypeScript and Vite.
 
-This is a boilerplate build with Vite, React 18, TypeScript, Vitest, Testing Library, TailwindCSS 3, Eslint and Prettier.
+## Prerequisites
 
-## What is inside?
+- Node.js (latest LTS version recommended)
+- npm or yarn
 
-This project uses many tools like:
-
-- [Vite](https://vitejs.dev)
-- [ReactJS](https://reactjs.org)
-- [TypeScript](https://www.typescriptlang.org)
-- [Vitest](https://vitest.dev)
-- [Testing Library](https://testing-library.com)
-- [Tailwindcss](https://tailwindcss.com)
-- [Eslint](https://eslint.org)
-- [Prettier](https://prettier.io)
-
-## Getting Started
-
-### Install
-
-Create the project.
+## Installation
 
 ```bash
-pnpm dlx degit joaopaulomoraes/reactjs-vite-tailwindcss-boilerplate my-app
+npm install
 ```
 
-Access the project directory.
+## Available Scripts
+
+### Development
+
+To run the application in development mode:
 
 ```bash
-cd my-app
+npm run dev
 ```
 
-Install dependencies.
-
-```bash
-pnpm install
-```
-
-Serve with hot reload at <http://localhost:5173>.
-
-```bash
-pnpm run dev
-```
-
-### Lint
-
-```bash
-pnpm run lint
-```
-
-### Typecheck
-
-```bash
-pnpm run typecheck
-```
+The application will be available at `http://localhost:3000`
 
 ### Build
 
-```bash
-pnpm run build
-```
-
-### Test
+To create a production build:
 
 ```bash
-pnpm run test
+npm run build
 ```
 
-View and interact with your tests via UI.
+### Preview Production Build
+
+To preview the production build locally:
 
 ```bash
-pnpm run test:ui
+npm run serve
 ```
 
-## License
+### Testing
 
-This project is licensed under the MIT License.
+Run tests in console:
+
+```bash
+npm run test
+```
+
+Run tests with UI:
+
+```bash
+npm run test:ui
+```
+
+### Code Quality
+
+Run linting:
+
+```bash
+npm run lint
+```
+
+Run type checking:
+
+```bash
+npm run typecheck
+```
+
+## Tech Stack
+
+- React 18
+- TypeScript
+- Vite
+- Vitest
+- TailwindCSS
+- React Router DOM
+- React Query
+- React Table
+
+## Project Structure
+
+The source code is located in the `src` directory, with absolute imports configured using the `@` alias.
+
+## Testing Setup
+
+Tests are configured with:
+- Testing Library
+- Happy DOM
+- Vitest
+
+Test files should be named as `*.test.{ts,tsx}` and will be automatically picked up by the test runner.
+```
